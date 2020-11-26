@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Styled-components | Coding journey</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Here you see & read about my coding journey and fun discoveries">
+    
+    <link rel="preload" href="/assets/css/0.styles.290e9ffc.css" as="style"><link rel="preload" href="/assets/js/app.7cec65c5.js" as="script"><link rel="preload" href="/assets/js/2.a094913a.js" as="script"><link rel="preload" href="/assets/js/12.88f6941b.js" as="script"><link rel="prefetch" href="/assets/js/10.b4c0ea8a.js"><link rel="prefetch" href="/assets/js/11.e9a8b75d.js"><link rel="prefetch" href="/assets/js/13.a05f583a.js"><link rel="prefetch" href="/assets/js/14.7f3bd346.js"><link rel="prefetch" href="/assets/js/15.3a54c7e9.js"><link rel="prefetch" href="/assets/js/3.6391a0d0.js"><link rel="prefetch" href="/assets/js/4.d1ae9c7a.js"><link rel="prefetch" href="/assets/js/5.649846ba.js"><link rel="prefetch" href="/assets/js/6.df223a99.js"><link rel="prefetch" href="/assets/js/7.b14d29dc.js"><link rel="prefetch" href="/assets/js/8.e7d5bfcd.js"><link rel="prefetch" href="/assets/js/9.dfa3391d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.290e9ffc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Coding journey</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="/documentation/" class="nav-link router-link-active">
+  Documentation
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="/documentation/" class="nav-link router-link-active">
+  Documentation
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/documentation/" class="sidebar-heading clickable router-link-active open"><span>Documentation</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/documentation/react/" class="sidebar-link">React</a></li><li><a href="/documentation/vue/" class="sidebar-link">Vue</a></li><li><a href="/documentation/styled-components/" aria-current="page" class="active sidebar-link">Styled-components</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/documentation/styled-components/#get-started" class="sidebar-link">Get started</a></li><li class="sidebar-sub-header"><a href="/documentation/styled-components/#create-a-component" class="sidebar-link">Create a component</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/documentation/styled-components/#pass-props" class="sidebar-link">Pass props</a></li></ul></li><li class="sidebar-sub-header"><a href="/documentation/styled-components/#helpers" class="sidebar-link">Helpers</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/documentation/styled-components/#themeprovider" class="sidebar-link">ThemeProvider</a></li><li class="sidebar-sub-header"><a href="/documentation/styled-components/#createglobalstyle" class="sidebar-link">CreateGlobalStyle</a></li><li class="sidebar-sub-header"><a href="/documentation/styled-components/#css" class="sidebar-link">Css</a></li></ul></li></ul></li><li><a href="/documentation/tailwind/" class="sidebar-link">Tailwind</a></li><li><a href="/documentation/vscode/" class="sidebar-link">VS Code</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="styled-components"><a href="#styled-components" class="header-anchor">#</a> Styled components</h1> <h2 id="get-started"><a href="#get-started" class="header-anchor">#</a> Get started</h2> <p>First we need to go into our project root folder and install our npm package</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save styled-components
+</code></pre></div><p>Then we need to import the package in our frontend</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">&quot;styled-components&quot;</span>
+</code></pre></div> <h2 id="create-a-component"><a href="#create-a-component" class="header-anchor">#</a> Create a component</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">&quot;styled-components&quot;</span>
+
+<span class="token keyword">const</span> Button <span class="token operator">=</span> styled<span class="token punctuation">.</span>button<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    background: blue;
+    padding: 1rem 2rem;
+    ...
+</span><span class="token template-punctuation string">`</span></span>
+</code></pre></div><p>Something that is also important to know is that you can inherit styling from a component of the same kind. This means that we do not have to repeat styling for similar components.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">&quot;styled-components&quot;</span>
+
+<span class="token keyword">const</span> StyledButton <span class="token operator">=</span> styled<span class="token punctuation">.</span>button<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    background: blue;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    ...
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">const</span> RedButton <span class="token operator">=</span> <span class="token function">styled</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    background: red;
+</span><span class="token template-punctuation string">`</span></span>
+</code></pre></div><div class="custom-block danger"><p class="custom-block-title">WARNING</p> <ul><li>Always remember semicolon after each row (otherwise the styling usually crashes your application)</li></ul></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <ul><li><a href="https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components" target="_blank" rel="noopener noreferrer">Download VS code extension to get css highlighting<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <h3 id="pass-props"><a href="#pass-props" class="header-anchor">#</a> Pass props</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">&quot;styled-components&quot;</span>
+
+<span class="token keyword">const</span> Button <span class="token operator">=</span> styled<span class="token punctuation">.</span>button<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    background: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token parameter">props</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>background<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    ...
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token function">render</span><span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Button background<span class="token operator">=</span><span class="token string">&quot;red&quot;</span><span class="token operator">&gt;</span>Demo button<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <ul><li>Remember that you can deconstruct props to the individual value so you do not have to use &quot;props&quot; everywhere.</li></ul></div> <h2 id="helpers"><a href="#helpers" class="header-anchor">#</a> Helpers</h2> <h3 id="themeprovider"><a href="#themeprovider" class="header-anchor">#</a> ThemeProvider</h3> <p>A helper component for theming. Injects the theme into all styled components anywhere beneath it in the component tree, via the context API.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> styled<span class="token punctuation">,</span> <span class="token punctuation">{</span> ThemeProvider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+
+<span class="token keyword">const</span> Box <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token parameter">props</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>color<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>ThemeProvider theme<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> color<span class="token operator">:</span> <span class="token string">'mediumseagreen'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Box<span class="token operator">&gt;</span><span class="token constant">I</span>'m mediumseagreen<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>Box<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>ThemeProvider<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h3 id="createglobalstyle"><a href="#createglobalstyle" class="header-anchor">#</a> CreateGlobalStyle</h3> <p>A helper function to generate a special StyledComponent that handles global styles. Normally, styled components are automatically scoped to a local CSS class and therefore isolated from other components. In the case of createGlobalStyle, this limitation is removed and things like CSS resets or base stylesheets can be applied.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createGlobalStyle<span class="token punctuation">,</span> ThemeProvider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;styled-components&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> GlobalStyle <span class="token operator">=</span> createGlobalStyle<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+    background: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> theme <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> theme<span class="token punctuation">.</span>color<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+    overflow-x: hidden;
+  }
+  
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token comment">// Wrapping your app </span>
+<span class="token keyword">const</span> theme <span class="token operator">=</span> <span class="token punctuation">{</span>
+    color<span class="token operator">:</span> <span class="token string">&quot;white&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">&lt;</span>ThemeProvider theme<span class="token operator">=</span><span class="token punctuation">{</span>theme<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>GlobalStyle <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Navigation <span class="token operator">/</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>ThemeProvider<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="css"><a href="#css" class="header-anchor">#</a> Css</h3> <p>Can be used to create a single css variable which we can re-use trough out the project</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>css<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;styled-components&quot;</span>
+
+<span class="token keyword">const</span> ButtonStyle <span class="token operator">=</span> css<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    background: blue;
+    padding: 1rem 2rem;
+    ...
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">const</span> Button <span class="token operator">=</span> styled<span class="token punctuation">.</span>button<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>ButtonStyle<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token function">render</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Button<span class="token operator">&gt;</span>Demo button<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/documentation/vue/" class="prev">
+        Vue
+      </a></span> <span class="next"><a href="/documentation/tailwind/">
+        Tailwind
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7cec65c5.js" defer></script><script src="/assets/js/2.a094913a.js" defer></script><script src="/assets/js/12.88f6941b.js" defer></script>
+  </body>
+</html>
