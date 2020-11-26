@@ -1,7 +1,6 @@
 module.exports = {
-  title: "Coding journey",
-  description:
-    "Here you see & read about my coding journey and fun discoveries",
+  title: "Coding documentation",
+  description: "Here you read about my coding discoveries",
   themeConfig: {
     nav: [
       { text: "About", link: "/about/" },
