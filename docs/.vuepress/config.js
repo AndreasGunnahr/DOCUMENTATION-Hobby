@@ -6,14 +6,6 @@ module.exports = {
     nav: [
       { text: "About", link: "/about/" },
       { text: "Documentation", link: "/documentation/" },
-      // {
-      //   text: "Languages",
-      //   ariaLabel: "Language Menu",
-      //   items: [
-      //     { text: "English", link: "/en/" },
-      //     { text: "Svenska", link: "/sv/" },
-      //   ],
-      // },
     ],
     sidebar: [
       {
