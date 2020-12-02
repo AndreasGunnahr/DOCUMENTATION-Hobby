@@ -16,6 +16,8 @@ module.exports = {
           "/documentation/styled-components/",
           "/documentation/tailwind/",
           "/documentation/vscode/",
+          "/documentation/docker/",
+          "/documentation/kubernetes/",
         ],
         collapsable: false,
       },
